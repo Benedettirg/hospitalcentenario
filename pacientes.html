@@ -1,0 +1,123 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Hospital Centenario Gualeguaychú"><title>Pacientes | Hospital Centenario</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="portal.css"></head><body><div class="topbar"><div class="container topbar__inner"><span><i class="fa-solid fa-location-dot"></i> Gualeguaychú · Entre Ríos</span><span><i class="fa-solid fa-heart-pulse"></i> Salud pública al servicio de la comunidad</span></div></div><header class="header"><div class="container header__inner"><a class="brand" href="index.html"><img src="images/logo.png" alt="Hospital Centenario"><div class="brand__name"><strong>HOSPITAL CENTENARIO</strong><span>GUALEGUAYCHÚ</span><small>SALUD PÚBLICA</small></div></a><button class="menu-toggle" id="menuToggle" aria-label="Abrir menú"><i class="fa-solid fa-bars"></i></button><nav class="nav" id="nav"><a class="" href="index.html">Inicio</a><div class="nav-dropdown is-active"><button class="nav-dropdown__toggle" type="button" aria-expanded="false" aria-haspopup="true">Pacientes <i class="fa-solid fa-chevron-down"></i></button><div class="nav-dropdown__menu"><a href="turnos.html"><i class="fa-solid fa-calendar-check"></i><span><strong>Turnos y admisión</strong><small>Cómo gestionar tu atención</small></span></a><a href="pacientes.html#guardia"><i class="fa-solid fa-truck-medical"></i><span><strong>Guardia y emergencias</strong><small>Información de atención</small></span></a><a href="pacientes.html#informacion"><i class="fa-solid fa-hospital-user"></i><span><strong>Información para pacientes</strong><small>Antes de venir y preguntas frecuentes</small></span></a></div></div><div class="nav-dropdown "><button class="nav-dropdown__toggle" type="button" aria-expanded="false" aria-haspopup="true">Servicios <i class="fa-solid fa-chevron-down"></i></button><div class="nav-dropdown__menu"><a href="servicios.html#especialidades"><i class="fa-solid fa-stethoscope"></i><span><strong>Especialidades</strong><small>Áreas de atención médica</small></span></a><a href="servicios.html#diagnostico"><i class="fa-solid fa-microscope"></i><span><strong>Diagnóstico y estudios</strong><small>Laboratorio e imágenes</small></span></a><a href="servicios.html#apoyo"><i class="fa-solid fa-hands-holding-circle"></i><span><strong>Servicios de apoyo</strong><small>Atención integral y acompañamiento</small></span></a></div></div><div class="nav-dropdown "><button class="nav-dropdown__toggle" type="button" aria-expanded="false" aria-haspopup="true">Institucional <i class="fa-solid fa-chevron-down"></i></button><div class="nav-dropdown__menu"><a href="institucional.html#historia"><i class="fa-solid fa-landmark"></i><span><strong>Nuestra historia</strong><small>Conocé nuestro recorrido</small></span></a><a href="institucional.html#valores"><i class="fa-solid fa-heart"></i><span><strong>Nuestros valores</strong><small>Principios que nos guían</small></span></a><a href="institucional.html#autoridades"><i class="fa-solid fa-users"></i><span><strong>Autoridades</strong><small>Equipo directivo</small></span></a></div></div><a class="" href="noticias.html">Noticias</a><button class="btn btn--nav" data-turnos><i class="fa-solid fa-calendar-check"></i> Turnos Online</button></nav></div></header><main>
+<section class="patients-hero">
+  <div class="patients-hero__image"></div>
+  <div class="container patients-hero__content">
+    <div class="breadcrumb"><a href="index.html">Inicio</a> / Pacientes</div>
+    <div class="patients-hero__grid">
+      <div class="patients-hero__copy">
+        <div class="patients-kicker"><span></span> INFORMACIÓN PARA PACIENTES</div>
+        <h1>Tu atención empieza <strong>antes de llegar.</strong></h1>
+        <p>Encontrá en un solo lugar lo que necesitás para gestionar un turno, llegar preparado, orientarte dentro del hospital y saber qué hacer ante una urgencia.</p>
+        <div class="patients-hero__actions">
+          <a class="btn btn--light" href="turnos.html"><i class="fa-solid fa-calendar-check"></i> Gestionar un turno</a>
+          <a class="btn btn--outline-light" href="#guardia"><i class="fa-solid fa-truck-medical"></i> Ver información de guardia</a>
+        </div>
+      </div>
+      <div class="patients-hero__panel">
+        <div class="patients-hero__panel-icon"><i class="fa-solid fa-hospital-user"></i></div>
+        <strong>¿Qué necesitás hoy?</strong>
+        <a href="#turnos-pacientes"><i class="fa-solid fa-arrow-right"></i><span>Un turno o consulta programada</span></a>
+        <a href="#guardia"><i class="fa-solid fa-arrow-right"></i><span>Atención por guardia</span></a>
+        <a href="#informacion"><i class="fa-solid fa-arrow-right"></i><span>Prepararme para mi atención</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="patients-quick section">
+  <div class="container">
+    <div class="patients-section-head">
+      <div><div class="eyebrow-blue">ACCESOS RÁPIDOS</div><h2>Elegí el camino que necesitás</h2></div>
+      <p>Una guía simple para que encuentres la información correcta sin tener que recorrer todo el sitio.</p>
+    </div>
+    <div class="patients-action-grid">
+      <a class="patient-action-card" href="#turnos-pacientes"><span class="patient-action-icon"><i class="fa-solid fa-calendar-days"></i></span><span><strong>Turnos</strong><small>Cómo solicitarlos y dónde gestionarlos</small></span><i class="fa-solid fa-arrow-right"></i></a>
+      <a class="patient-action-card patient-action-card--danger" href="#guardia"><span class="patient-action-icon"><i class="fa-solid fa-truck-medical"></i></span><span><strong>Guardia</strong><small>Urgencias, emergencias y triage</small></span><i class="fa-solid fa-arrow-right"></i></a>
+      <a class="patient-action-card" href="#admission"><span class="patient-action-icon"><i class="fa-solid fa-id-card"></i></span><span><strong>Admisión</strong><small>Registro y documentación necesaria</small></span><i class="fa-solid fa-arrow-right"></i></a>
+      <a class="patient-action-card" href="servicios.html"><span class="patient-action-icon"><i class="fa-solid fa-stethoscope"></i></span><span><strong>Servicios</strong><small>Especialidades, estudios y apoyo</small></span><i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </div>
+</section>
+
+<section class="section patients-route" id="turnos-pacientes">
+  <div class="container">
+    <div class="patients-section-head">
+      <div><div class="eyebrow-blue">TU RECORRIDO</div><h2>De la consulta a la atención</h2></div>
+      <p>Seguí estos pasos para llegar con la información necesaria y hacer más simple tu experiencia.</p>
+    </div>
+    <div class="patient-steps">
+      <article><span>01</span><div><h3>Gestioná tu turno</h3><p>Los turnos para las distintas especialidades se informaron de lunes a viernes, de 6 a 19 hs., en admisiones del nuevo edificio y en los pabellones 3 y 4.</p><a href="turnos.html">Ver cómo gestionar un turno <i class="fa-solid fa-arrow-right"></i></a></div></article>
+      <article><span>02</span><div><h3>Prepará tu documentación</h3><p>Tené a mano tu DNI y la documentación que te haya solicitado el servicio. Esto facilita el registro y la atención.</p><a href="#admission">Ver información de admisión <i class="fa-solid fa-arrow-right"></i></a></div></article>
+      <article><span>03</span><div><h3>Llegá al sector indicado</h3><p>Antes de venir, revisá dónde funciona el servicio, estudio o especialidad que necesitás. Si no estás seguro, consultá previamente.</p><a href="servicios.html">Explorar servicios <i class="fa-solid fa-arrow-right"></i></a></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="section patients-admission" id="admission">
+  <div class="container">
+    <div class="admission-layout">
+      <div class="admission-copy">
+        <div class="eyebrow-blue">ADMISIÓN</div>
+        <h2>Tu registro también es parte de la atención.</h2>
+        <p>La Admisión General Única centraliza procesos de registro de pacientes y distintas gestiones vinculadas con la atención hospitalaria. Llevar tu DNI ayuda a que tus datos puedan registrarse correctamente.</p>
+        <div class="admission-checks">
+          <div><span><i class="fa-solid fa-id-card"></i></span><p><strong>DNI</strong><small>Físico o una imagen del documento en el celular.</small></p></div>
+          <div><span><i class="fa-solid fa-file-medical"></i></span><p><strong>Indicaciones</strong><small>Estudios, órdenes o documentación que te haya solicitado el servicio.</small></p></div>
+          <div><span><i class="fa-solid fa-shield-heart"></i></span><p><strong>Datos actualizados</strong><small>Informá correctamente tus datos personales y cobertura si corresponde.</small></p></div>
+        </div>
+      </div>
+      <div class="admission-card">
+        <div class="admission-card__icon"><i class="fa-solid fa-user-check"></i></div>
+        <span>ANTES DE SALIR DE CASA</span>
+        <strong>¿Llevás todo lo necesario?</strong>
+        <ul><li><i class="fa-solid fa-check"></i> DNI</li><li><i class="fa-solid fa-check"></i> Turno o indicación</li><li><i class="fa-solid fa-check"></i> Estudios previos, si fueron solicitados</li><li><i class="fa-solid fa-check"></i> Medicación o información relevante para tu consulta</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section patients-emergency" id="guardia">
+  <div class="container">
+    <div class="emergency-heading"><div><div class="eyebrow-blue">GUARDIA Y EMERGENCIAS</div><h2>La gravedad define la prioridad.</h2></div><p>El Hospital Centenario implementó un sistema de <strong>triage de 5 niveles</strong> para clasificar a las personas según su estado y necesidades de atención.</p></div>
+    <div class="triage-grid">
+      <article class="triage-card triage-1"><span>01</span><div><strong>Emergencia</strong><small>Atención inmediata</small></div></article>
+      <article class="triage-card triage-2"><span>02</span><div><strong>Urgencia</strong><small>Dentro de 30 minutos como máximo</small></div></article>
+      <article class="triage-card triage-3"><span>03</span><div><strong>Urgencia menor</strong><small>Atención dentro de los siguientes 120 minutos</small></div></article>
+      <article class="triage-card triage-4"><span>04</span><div><strong>Consulta prioritaria</strong><small>Atención dentro de los siguientes 180 minutos</small></div></article>
+      <article class="triage-card triage-5"><span>05</span><div><strong>Consulta externa</strong><small>Atención por consultorio</small></div></article>
+    </div>
+    <div class="emergency-note"><i class="fa-solid fa-circle-info"></i><p><strong>Importante:</strong> el orden de atención en una guardia no necesariamente coincide con el orden de llegada. Si tu situación no es una urgencia, puede corresponder una consulta programada por consultorio.</p></div>
+  </div>
+</section>
+
+<section class="section patients-info" id="informacion">
+  <div class="container">
+    <div class="patients-section-head"><div><div class="eyebrow-blue">INFORMACIÓN ÚTIL</div><h2>Pequeños detalles que hacen la diferencia</h2></div></div>
+    <div class="patient-info-grid">
+      <article><span><i class="fa-solid fa-clock"></i></span><h3>Llegá con tiempo</h3><p>Considerá el tiempo necesario para ingresar, orientarte y completar la admisión antes de tu atención.</p></article>
+      <article><span><i class="fa-solid fa-mobile-screen-button"></i></span><h3>Guardá tu información</h3><p>Conservá en tu teléfono el turno, indicaciones y documentación digital que puedas necesitar.</p></article>
+      <article><span><i class="fa-solid fa-comments"></i></span><h3>Preguntá si tenés dudas</h3><p>Si no sabés dónde dirigirte, buscá orientación antes de desplazarte por distintos sectores.</p></article>
+      <article><span><i class="fa-solid fa-ban"></i></span><h3>Si no podés asistir</h3><p>Cancelá tu turno con anticipación para que ese espacio pueda ser aprovechado por otra persona.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="section patients-faq alt">
+  <div class="container patients-faq-layout">
+    <div><div class="eyebrow-blue">PREGUNTAS FRECUENTES</div><h2>Lo que más suelen preguntar</h2><p>Información rápida para resolver las dudas más comunes antes de concurrir.</p></div>
+    <div class="faq">
+      <div class="faq-item"><button class="faq-q" type="button">¿Cuándo puedo solicitar un turno?<i class="fa-solid fa-chevron-down"></i></button><div class="faq-a">La información comunicada en junio de 2026 indica lunes a viernes de 6 a 19 hs. para gestionar turnos en la admisión del nuevo edificio y en los pabellones 3 y 4.</div></div>
+      <div class="faq-item"><button class="faq-q" type="button">¿Qué hago si no puedo asistir a mi turno?<i class="fa-solid fa-chevron-down"></i></button><div class="faq-a">Se recomienda cancelarlo con anticipación. El hospital informó líneas de WhatsApp destinadas a cancelaciones para liberar ese espacio y favorecer el acceso de otros pacientes.</div></div>
+      <div class="faq-item"><button class="faq-q" type="button">¿Qué tengo que llevar?<i class="fa-solid fa-chevron-down"></i></button><div class="faq-a">Como orientación general, llevá DNI y toda orden, indicación o documentación que haya solicitado el servicio. Para algunas atenciones pueden existir requisitos específicos.</div></div>
+      <div class="faq-item"><button class="faq-q" type="button">¿Por qué puedo esperar en la guardia aunque haya llegado antes? <i class="fa-solid fa-chevron-down faq-chevron" aria-hidden="true"></i></button><div class="faq-a">Porque la guardia utiliza triage: las personas se priorizan según la gravedad y la necesidad de atención, no solamente por orden de llegada.</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="patients-final section">
+  <div class="container"><div class="patients-final__box"><div><div class="eyebrow-blue">HOSPITAL CENTENARIO</div><h2>Estamos para acompañarte.</h2><p>Encontrá turnos, servicios, información institucional y canales de contacto desde un mismo lugar.</p></div><div class="patients-final__actions"><a class="btn btn--primary" href="turnos.html">Gestionar turno</a><a class="btn btn--outline" href="servicios.html">Ver servicios</a></div></div></div>
+</section>
+</main><footer class="footer"><div class="container footer__grid"><div><h3>Hospital Centenario</h3><p>Gualeguaychú, Entre Ríos.<br>Salud pública al servicio de la comunidad.</p></div><div class="footer-column footer-column--access"><h3>Accesos</h3><a href="pacientes.html">Pacientes</a><a href="servicios.html">Servicios</a><a href="turnos.html">Turnos</a></div><div class="footer-column footer-column--institution"><h3>Institución</h3><a href="institucional.html">Nuestra institución</a><a href="noticias.html">Noticias</a></div><div><h3>Atención</h3><p>Guardia: atención permanente.</p><p>Turnos: lunes a viernes de 6 a 19 hs.</p></div></div><div class="container footer__bottom"><span>© <span id="year"></span> Hospital Centenario</span><span class="footer-project-label"></span><span class="footer-project-signature"><img src="images/firma-syntratech.png" alt="Desarrollado por SyntraTech — Desarrollo Web por Giovanni Benedetti" loading="lazy"></span></div>
+
+</footer><div class="a11y" aria-label="Accesibilidad"><button id="fontNormal" type="button" title="Tamaño normal">A</button><button id="fontPlus" type="button" title="Aumentar texto">A+</button></div><button class="backtop" id="backTop" aria-label="Volver arriba"><i class="fa-solid fa-arrow-up"></i></button><div class="modal" id="turnModal"><div class="modal__box"><button class="modal__close" data-close aria-label="Cerrar"><i class="fa-solid fa-xmark"></i></button><div class="eyebrow-blue">GESTIÓN DE TURNOS</div><h2>¿Cómo querés gestionar tu turno?</h2><p>La información publicada en junio de 2026 indica atención para turnos de lunes a viernes de 6 a 19 hs. en admisiones del nuevo edificio y pabellones 3 y 4.</p><div class="modal-actions"><a href="turnos.html"><strong>Ver información completa</strong><span>Horarios, admisiones y cancelaciones</span></a><a href="tel:+543446428034"><strong>Llamar al hospital</strong><span>+54 3446 42-8034</span></a></div></div></div><script src="portal.js"></script><script src="script.js"></script><script src="v40-enhancements.js"></script>
+</body></html>
