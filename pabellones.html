@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Hospital Centenario Gualeguaychú"><title>Pabellones y áreas de atención | Hospital Centenario</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="portal.css"></head><body><header class="header"><div class="container header__inner"><a class="brand" href="index.html"><img src="images/logo.png" alt="Hospital Centenario"><div class="brand__name"><strong>HOSPITAL CENTENARIO</strong><span>GUALEGUAYCHÚ</span><small>SALUD PÚBLICA</small></div></a><button class="menu-toggle" id="menuToggle" aria-label="Abrir menú"><i class="fa-solid fa-bars"></i></button><nav class="nav" id="nav"><a href="index.html">Inicio</a><div class="nav-dropdown "><button class="nav-dropdown__toggle" type="button" aria-expanded="false" aria-haspopup="true">Pacientes <i class="fa-solid fa-chevron-down"></i></button><div class="nav-dropdown__menu"><a href="turnos.html"><i class="fa-solid fa-calendar-check"></i><span><strong>Turnos y admisión</strong><small>Cómo gestionar tu atención</small></span></a><a href="pacientes.html#guardia"><i class="fa-solid fa-truck-medical"></i><span><strong>Guardia y emergencias</strong><small>Información de atención</small></span></a><a href="pacientes.html#informacion"><i class="fa-solid fa-hospital-user"></i><span><strong>Información para pacientes</strong><small>Antes de venir y preguntas frecuentes</small></span></a></div></div><div class="nav-dropdown "><button class="nav-dropdown__toggle" type="button" aria-expanded="false" aria-haspopup="true">Servicios <i class="fa-solid fa-chevron-down"></i></button><div class="nav-dropdown__menu"><a href="servicios.html#especialidades"><i class="fa-solid fa-stethoscope"></i><span><strong>Especialidades</strong><small>Áreas de atención médica</small></span></a><a href="servicios.html#diagnostico"><i class="fa-solid fa-microscope"></i><span><strong>Diagnóstico y estudios</strong><small>Laboratorio e imágenes</small></span></a><a href="servicios.html#apoyo"><i class="fa-solid fa-hands-holding-circle"></i><span><strong>Servicios de apoyo</strong><small>Atención integral y acompañamiento</small></span></a></div></div><div class="nav-dropdown "><button class="nav-dropdown__toggle" type="button" aria-expanded="false" aria-haspopup="true">Institucional <i class="fa-solid fa-chevron-down"></i></button><div class="nav-dropdown__menu"><a href="institucional.html#historia"><i class="fa-solid fa-landmark"></i><span><strong>Nuestra historia</strong><small>Conocé nuestro recorrido</small></span></a><a href="institucional.html#valores"><i class="fa-solid fa-heart"></i><span><strong>Nuestros valores</strong><small>Principios que nos guían</small></span></a><a href="institucional.html#autoridades"><i class="fa-solid fa-users"></i><span><strong>Autoridades</strong><small>Equipo directivo</small></span></a></div></div><div class="nav-dropdown pabellones-dropdown is-active">
+<button class="nav-dropdown__toggle" type="button" aria-expanded="false" aria-haspopup="true">Pabellones <i class="fa-solid fa-chevron-down"></i></button>
+<div class="nav-dropdown__menu">
+<a href="pabellones.html#ambulatoria"><i class="fa-solid fa-stethoscope"></i><span><strong>Atención ambulatoria</strong><small>Consultas y especialidades</small></span></a>
+<a href="pabellones.html#diagnostico"><i class="fa-solid fa-microscope"></i><span><strong>Diagnóstico y tratamiento</strong><small>Estudios y procedimientos</small></span></a>
+<a href="pabellones.html#internacion"><i class="fa-solid fa-bed-pulse"></i><span><strong>Internación y cuidados</strong><small>Atención hospitalaria</small></span></a>
+<a href="pabellones.html#emergencias"><i class="fa-solid fa-truck-medical"></i><span><strong>Emergencias</strong><small>Guardia y atención inicial</small></span></a>
+<a href="pabellones.html#maternoinfantil"><i class="fa-solid fa-baby"></i><span><strong>Área materno-infantil</strong><small>Salud materna e infantil</small></span></a>
+</div></div><a class="" href="noticias.html">Noticias</a><button class="btn btn--nav" data-turnos><i class="fa-solid fa-calendar-check"></i> Turnos Online</button></nav></div></header>
+<main>
+  <section class="page-hero pabellones-hero">
+    <div class="container">
+      <div class="breadcrumb"><a href="index.html">Inicio</a> / Pabellones</div>
+      <span class="eyebrow">HOSPITAL CENTENARIO · GUALEGUAYCHÚ</span>
+      <h1>Pabellones y áreas de atención</h1>
+      <p>Encontrá las principales áreas de atención y las especialidades relacionadas, organizadas para que pacientes y familias puedan orientarse con facilidad.</p>
+      <div class="pabellones-hero__actions">
+        <a class="btn btn--primary" href="turnos.html"><i class="fa-solid fa-calendar-check"></i> Solicitar un turno</a>
+        <a class="btn btn--outline" href="#directorio"><i class="fa-solid fa-arrow-down"></i> Explorar áreas</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section pabellones-section" id="directorio">
+    <div class="container">
+      <div class="section-heading">
+        <span class="eyebrow">DIRECTORIO DE ÁREAS</span>
+        <h2>¿Qué área necesitás consultar?</h2>
+        <p>Seleccioná un área para conocer las ramas y servicios que pueden estar relacionados con ella.</p>
+      </div>
+      <div class="pabellones-grid">
+        <article class="pabellon-card" id="ambulatoria">
+          <div class="pabellon-card__icon"><i class="fa-solid fa-stethoscope"></i></div>
+          <span class="pabellon-card__tag">Consultas programadas</span>
+          <h3>Atención ambulatoria</h3>
+          <p>Orientación para consultas médicas y seguimiento sin internación.</p>
+          <h4>Ramas y especialidades</h4>
+          <ul><li>Clínica médica</li><li>Cardiología</li><li>Dermatología</li><li>Endocrinología</li><li>Ginecología</li><li>Pediatría</li></ul>
+          <a href="turnos.html" class="pabellon-card__link">Consultar turnos <i class="fa-solid fa-arrow-right"></i></a>
+        </article>
+
+        <article class="pabellon-card" id="diagnostico">
+          <div class="pabellon-card__icon"><i class="fa-solid fa-microscope"></i></div>
+          <span class="pabellon-card__tag">Estudios y procedimientos</span>
+          <h3>Diagnóstico y tratamiento</h3>
+          <p>Áreas de apoyo para estudios, evaluación clínica y tratamientos indicados por profesionales.</p>
+          <h4>Ramas y servicios</h4>
+          <ul><li>Laboratorio</li><li>Diagnóstico por imágenes</li><li>Hemoterapia</li><li>Anatomía patológica</li><li>Farmacia hospitalaria</li></ul>
+          <a href="servicios.html#diagnostico" class="pabellon-card__link">Ver servicios <i class="fa-solid fa-arrow-right"></i></a>
+        </article>
+
+        <article class="pabellon-card" id="internacion">
+          <div class="pabellon-card__icon"><i class="fa-solid fa-bed-pulse"></i></div>
+          <span class="pabellon-card__tag">Atención hospitalaria</span>
+          <h3>Internación y cuidados</h3>
+          <p>Áreas vinculadas con el cuidado de personas que requieren permanencia hospitalaria.</p>
+          <h4>Ramas y servicios</h4>
+          <ul><li>Clínica médica</li><li>Cirugía</li><li>Cuidados críticos</li><li>Enfermería</li><li>Rehabilitación y seguimiento</li></ul>
+          <a href="servicios.html" class="pabellon-card__link">Explorar servicios <i class="fa-solid fa-arrow-right"></i></a>
+        </article>
+
+        <article class="pabellon-card" id="emergencias">
+          <div class="pabellon-card__icon"><i class="fa-solid fa-truck-medical"></i></div>
+          <span class="pabellon-card__tag">Atención urgente</span>
+          <h3>Emergencias y guardia</h3>
+          <p>Información orientativa sobre el acceso a la atención ante situaciones urgentes.</p>
+          <h4>Áreas relacionadas</h4>
+          <ul><li>Recepción y evaluación inicial</li><li>Atención de urgencias</li><li>Estabilización</li><li>Derivación según criterio profesional</li></ul>
+          <a href="pacientes.html#guardia" class="pabellon-card__link">Información de guardia <i class="fa-solid fa-arrow-right"></i></a>
+        </article>
+
+        <article class="pabellon-card" id="maternoinfantil">
+          <div class="pabellon-card__icon"><i class="fa-solid fa-baby"></i></div>
+          <span class="pabellon-card__tag">Salud materna e infantil</span>
+          <h3>Área materno-infantil</h3>
+          <p>Orientación para la atención vinculada al embarazo, nacimiento y salud infantil.</p>
+          <h4>Ramas relacionadas</h4>
+          <ul><li>Obstetricia</li><li>Ginecología</li><li>Pediatría</li><li>Atención neonatal</li><li>Controles y seguimiento</li></ul>
+          <a href="turnos.html" class="pabellon-card__link">Consultar turnos <i class="fa-solid fa-arrow-right"></i></a>
+        </article>
+      </div>
+      <div class="notice pabellones-note">
+        <i class="fa-solid fa-circle-info"></i>
+        <div><strong>Información orientativa de la propuesta web</strong><p>La agrupación de áreas y especialidades de esta página es una estructura inicial para navegación. Antes de publicar el sitio como institucional, el Hospital Centenario debe confirmar los nombres oficiales de los pabellones, las especialidades disponibles y su ubicación física.</p></div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="footer"><div class="container footer__grid"><div><h3>Hospital Centenario</h3><p>Gualeguaychú, Entre Ríos.<br>Salud pública al servicio de la comunidad.</p></div><div class="footer-column footer-column--access"><h3>Accesos</h3><a href="pacientes.html">Pacientes</a><a href="servicios.html">Servicios</a><a href="turnos.html">Turnos</a></div><div class="footer-column footer-column--institution"><h3>Institución</h3><a href="institucional.html">Nuestra institución</a><a href="noticias.html">Noticias</a></div><div><h3>Atención</h3><p>Guardia: atención permanente.</p><p>Turnos: lunes a viernes de 6 a 19 hs.</p></div></div><div class="container footer__bottom"><span>© <span id="year"></span> Hospital Centenario</span><span class="footer-project-label"></span><span class="footer-project-signature"><img src="images/firma-syntratech.png" alt="Desarrollado por SyntraTech — Desarrollo Web por Giovanni Benedetti" loading="lazy"></span></div>
+
+</footer><script src="portal.js"></script>
+<script src="script.js"></script>
+<script src="v40-enhancements.js"></script>
+</body></html>

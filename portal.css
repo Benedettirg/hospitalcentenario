@@ -576,3 +576,38 @@ details[open] > summary .faq-chevron,
   }
 }
 
+
+
+/* V41 — Pabellones y áreas de atención */
+.pabellones-hero { position:relative; overflow:hidden; background:radial-gradient(circle at 90% 15%,rgba(45,151,202,.14),transparent 34%),linear-gradient(120deg,#eaf5fb,#fff 65%); }
+.pabellones-hero:after { content:""; position:absolute; width:330px;height:330px;border-radius:50%;border:1px solid rgba(7,88,157,.10);right:-90px;bottom:-190px;pointer-events:none; }
+.pabellones-hero .eyebrow,.section-heading .eyebrow { display:inline-block;color:var(--blue);font-size:11px;font-weight:800;letter-spacing:.18em;margin-bottom:10px; }
+.pabellones-hero h1 { max-width:850px; }
+.pabellones-hero__actions { display:flex;flex-wrap:wrap;gap:12px;margin-top:26px; }
+.pabellones-section { padding:72px 0 84px; }
+.section-heading { max-width:740px;margin:0 auto 32px;text-align:center; }
+.section-heading h2 { font:800 clamp(28px,3vw,38px)/1.15 Manrope,sans-serif;color:#073b70;margin:4px 0 12px; }
+.section-heading p { color:var(--muted);font-size:16px; }
+.pabellones-grid { display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;align-items:stretch; }
+.pabellon-card { position:relative;display:flex;flex-direction:column;padding:27px;background:#fff;border:1px solid var(--line);border-radius:20px;box-shadow:0 8px 28px rgba(18,48,65,.045);scroll-margin-top:120px;transition:transform .22s ease,box-shadow .22s ease,border-color .22s ease; }
+.pabellon-card:hover { transform:translateY(-4px);box-shadow:0 16px 36px rgba(18,48,65,.10);border-color:rgba(7,88,157,.28); }
+.pabellon-card__icon { width:54px;height:54px;display:grid;place-items:center;border-radius:16px;background:#e8f4fc;color:var(--blue);font-size:22px;margin-bottom:18px; }
+.pabellon-card__tag { align-self:flex-start;background:#eef7fc;color:#17649b;border-radius:999px;padding:5px 10px;font-size:11px;font-weight:800; }
+.pabellon-card h3 { color:#123448;font:800 22px/1.25 Manrope,sans-serif;margin:13px 0 9px; }
+.pabellon-card p { color:var(--muted);font-size:14px;line-height:1.7;min-height:70px; }
+.pabellon-card h4 { font-size:13px;letter-spacing:.02em;margin:18px 0 8px;color:#24475c; }
+.pabellon-card ul { padding:0;margin:0 0 20px;list-style:none;display:grid;gap:8px; }
+.pabellon-card li { position:relative;padding-left:22px;font-size:14px;color:#405968; }
+.pabellon-card li:before { content:"";position:absolute;left:1px;top:.65em;width:7px;height:7px;border-radius:50%;background:#1b8bc5; }
+.pabellon-card__link { display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:auto;padding-top:15px;border-top:1px solid #e8eef2;color:var(--blue);font-weight:800;font-size:14px; }
+.pabellon-card__link i { transition:transform .2s ease; }
+.pabellon-card__link:hover i { transform:translateX(4px); }
+.pabellones-note { margin-top:28px; }
+.pabellones-dropdown .nav-dropdown__menu { width:300px; }
+@media(max-width:1050px) { .pabellones-grid { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+@media(max-width:760px) { .pabellones-grid { grid-template-columns:1fr; }.pabellones-section { padding:48px 0 58px; }.pabellon-card p { min-height:0; }.pabellones-hero__actions .btn { width:100%; } }
+@media(prefers-reduced-motion:reduce) { .pabellon-card,.pabellon-card__link i { transition:none!important; } }
+
+/* V42 — Emergencias: video + clasificación visual de triage */
+.emergency-media-stack{display:flex;flex-direction:column;gap:22px;margin-top:0}.emergency-video-card{width:100%;border-radius:22px;overflow:hidden;background:#082f49;border:1px solid #dbe8ef;box-shadow:0 14px 36px rgba(20,60,84,.10)}.emergency-video{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;background:#082f49}.emergency-triage-image{margin:0;width:100%;border:1px solid #dbe8ef;border-radius:22px;overflow:hidden;background:#fff;box-shadow:0 10px 30px rgba(20,60,84,.07)}.emergency-triage-image img{display:block;width:100%;height:auto;max-width:100%;object-fit:contain}.emergency-media-stack + .emergency-note{margin-top:22px}
+@media(max-width:700px){.emergency-video-card,.emergency-triage-image{border-radius:15px}.emergency-media-stack{gap:16px}.emergency-media-stack + .emergency-note{margin-top:16px}}
