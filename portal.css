@@ -622,3 +622,25 @@ details[open] > summary .faq-chevron,
 .pab-card[style*="#d9e343"] .pab-pills span{background:#fbfddf;border-color:#edf2a2}.pab-card[style*="#004a97"] .pab-pills span{background:#edf4fb;border-color:#d4e2f1}.pab-card[style*="#00a09a"] .pab-pills span{background:#e9f8f7;border-color:#cbeeea}.pab-card[style*="#019cde"] .pab-pills span{background:#eaf7fd;border-color:#cbeaf8}
 .pab-note{margin-top:24px;padding:16px 20px;border:1px solid #dce7ee;border-radius:14px;background:#f5f9fb;color:#60798a;font-size:12px}.pab-note p{margin:4px 0 0}
 @media(max-width:700px){.pab-intro{display:block}.pab-intro p{margin-top:10px}.pab-head{grid-template-columns:55px 1fr;padding:22px}.pab-num{width:48px;height:48px}.pab-body{padding:18px 22px 24px}}
+
+/* Turnos Demo V3 — asignación y notificación automática */
+.appointment-assignment{margin-top:28px;border:1px solid #cfe0ed;border-radius:20px;background:#fff;box-shadow:0 18px 45px rgba(8,44,67,.10);overflow:hidden}
+.assignment-loading,.assignment-result{padding:30px}
+.assignment-loading{display:flex;align-items:center;gap:18px;background:linear-gradient(135deg,#f4f9fd,#fff)}
+.assignment-spinner{width:52px;height:52px;border-radius:50%;display:grid;place-items:center;background:#e7f3fb;color:#004A97;font-size:1.4rem}
+.assignment-result-head{display:flex;align-items:flex-start;gap:16px;position:relative}
+.assignment-check{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;background:#e7f6f4;color:#00A09A;font-size:1.2rem;flex:none}
+.assignment-result-head h2{margin:5px 0 4px;color:#0b315f;font-family:Manrope,sans-serif;font-size:clamp(1.7rem,3vw,2.6rem)}
+.assignment-result-head p{margin:0;color:#718197}
+.assignment-status{margin-left:auto;padding:8px 12px;border-radius:999px;background:#e7f3fb;color:#004A97;font-size:.78rem;font-weight:800;white-space:nowrap}
+.assignment-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:24px}
+.assignment-grid>div{padding:16px;border:1px solid #dce8f1;border-radius:13px;background:#fbfdff}
+.assignment-grid small{display:block;color:#6d8499;font-weight:800;font-size:.72rem;text-transform:uppercase;letter-spacing:.04em;margin-bottom:6px}
+.assignment-grid strong{display:block;color:#183b60;font-size:1rem}
+.confirmation-box{display:flex;gap:14px;align-items:flex-start;margin-top:18px;padding:18px;border-radius:14px;background:#f1faf8;border:1px solid #cdebe4}
+.confirmation-icon{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:#00A09A;color:#fff;font-size:1.2rem;flex:none}
+.confirmation-box strong{display:block;color:#0b315f}.confirmation-box p{margin:5px 0 8px;color:#5f7487;font-size:.9rem;line-height:1.5}
+.confirmation-countdown{font-weight:800;color:#004A97;font-size:.82rem}
+.assignment-actions{margin-top:14px}.whatsapp-auto-status{display:flex;align-items:center;gap:12px;padding:13px 15px;border-radius:12px;background:#f4f7fa;border:1px solid #dce6ed;color:#4e6679}.whatsapp-auto-status>i{font-size:1.3rem;color:#00A09A}.whatsapp-auto-status strong{display:block;color:#183b60}.whatsapp-auto-status span{display:block;font-size:.82rem;margin-top:2px}.whatsapp-auto-status.is-sent{background:#eaf8f5;border-color:#c7e9df}.whatsapp-auto-status.is-sent span{color:#16785d;font-weight:700}
+@media(max-width:900px){.assignment-grid{grid-template-columns:1fr 1fr}.assignment-status{margin-left:0}.assignment-result-head{flex-wrap:wrap}}
+@media(max-width:600px){.assignment-loading,.assignment-result{padding:22px}.assignment-grid{grid-template-columns:1fr}.assignment-result-head h2{font-size:1.65rem}}
