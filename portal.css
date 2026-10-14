@@ -644,3 +644,32 @@ details[open] > summary .faq-chevron,
 .assignment-actions{margin-top:14px}.whatsapp-auto-status{display:flex;align-items:center;gap:12px;padding:13px 15px;border-radius:12px;background:#f4f7fa;border:1px solid #dce6ed;color:#4e6679}.whatsapp-auto-status>i{font-size:1.3rem;color:#00A09A}.whatsapp-auto-status strong{display:block;color:#183b60}.whatsapp-auto-status span{display:block;font-size:.82rem;margin-top:2px}.whatsapp-auto-status.is-sent{background:#eaf8f5;border-color:#c7e9df}.whatsapp-auto-status.is-sent span{color:#16785d;font-weight:700}
 @media(max-width:900px){.assignment-grid{grid-template-columns:1fr 1fr}.assignment-status{margin-left:0}.assignment-result-head{flex-wrap:wrap}}
 @media(max-width:600px){.assignment-loading,.assignment-result{padding:22px}.assignment-grid{grid-template-columns:1fr}.assignment-result-head h2{font-size:1.65rem}}
+
+/* V47 — Ajuste fino de navegación principal y menú Docencia e investigación */
+.header__inner{gap:22px;}
+.nav{flex:1;min-width:0;justify-content:flex-end;gap:clamp(9px,1.15vw,16px);}
+.nav > a,
+.nav-dropdown__toggle{font-size:clamp(12px,.95vw,14px);white-space:nowrap;letter-spacing:0;}
+.nav-dropdown{flex:0 0 auto;}
+.nav-dropdown__toggle{gap:6px;line-height:1.2;}
+.nav-dropdown__toggle i{flex:0 0 auto;}
+.nav .btn--nav{flex:0 0 auto;white-space:nowrap;padding:11px 15px;font-size:12px;}
+.nav-dropdown__menu{min-width:220px;}
+.nav-dropdown__menu a{white-space:nowrap;}
+@media(min-width:761px) and (max-width:1120px){
+  .header__inner{gap:14px;}
+  .brand{gap:8px;flex:0 0 auto;}
+  .brand img{width:48px;height:48px;}
+  .brand__name strong{font-size:14px;letter-spacing:.5px;}
+  .brand__name span{font-size:12px;letter-spacing:1.8px;}
+  .brand__name small{font-size:8px;letter-spacing:1.2px;}
+  .nav{gap:9px;}
+  .nav > a,.nav-dropdown__toggle{font-size:12px;}
+  .nav .btn--nav{padding:10px 12px;font-size:11px;}
+}
+@media(max-width:760px){
+  .header__inner{gap:10px;}
+  .nav{flex:initial;}
+  .nav > a,.nav-dropdown__toggle{white-space:normal;font-size:15px;}
+  .nav-dropdown__toggle{line-height:1.35;}
+}
