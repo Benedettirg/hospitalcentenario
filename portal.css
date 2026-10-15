@@ -673,3 +673,63 @@ details[open] > summary .faq-chevron,
   .nav > a,.nav-dropdown__toggle{white-space:normal;font-size:15px;}
   .nav-dropdown__toggle{line-height:1.35;}
 }
+
+
+/* V54 — navegación alineada y estados hover corregidos */
+.header__inner{align-items:center;}
+.nav{align-items:center;}
+.nav > a,
+.nav-dropdown__toggle{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  box-sizing:border-box;
+  min-height:76px;
+  height:76px;
+  padding-top:0 !important;
+  padding-bottom:0 !important;
+  margin:0;
+  line-height:1.2;
+  vertical-align:middle;
+}
+.nav-dropdown{height:76px;align-items:center;}
+.nav-dropdown__toggle{position:relative;}
+/* La línea verde solo se muestra al pasar el cursor o al enfocar con teclado. */
+.nav-dropdown__toggle:after{content:none !important;}
+.nav-dropdown:hover .nav-dropdown__toggle:after,
+.nav-dropdown:focus-within .nav-dropdown__toggle:after{
+  content:"" !important;
+  position:absolute;
+  left:0;right:0;bottom:18px;
+  height:3px;border-radius:10px;background:#8bc34a;
+}
+.nav-dropdown:hover .nav-dropdown__toggle,
+.nav-dropdown:focus-within .nav-dropdown__toggle{color:var(--blue);}
+@media(max-width:760px){
+  .nav-dropdown{height:auto;}
+  .nav > a,.nav-dropdown__toggle{min-height:44px;height:auto;padding:12px 10px !important;}
+  .nav-dropdown:hover .nav-dropdown__toggle:after,
+  .nav-dropdown:focus-within .nav-dropdown__toggle:after{display:none;}
+}
+
+/* Ajuste visual del acceso Turnos Online en la navegación principal */
+.header .nav a.btn--nav{
+  padding:12px 18px;
+  min-height:44px;
+  border-radius:999px;
+  background:#07589d;
+  color:#fff;
+  line-height:1.2;
+  white-space:nowrap;
+  box-shadow:0 4px 12px rgba(7,88,157,.12);
+}
+.header .nav a.btn--nav:hover{
+  background:#06477f;
+  color:#fff;
+  transform:translateY(-1px);
+  box-shadow:0 7px 16px rgba(7,88,157,.2);
+}
+.header .nav a.btn--nav:after{display:none}
+@media(max-width:760px){
+  .header .nav a.btn--nav{margin:5px 0;padding:13px 14px;min-height:44px;border-radius:12px;justify-content:flex-start}
+}
